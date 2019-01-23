@@ -6,6 +6,9 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth; }
+
 /* Style of header */
 .header { 
 
@@ -23,24 +26,33 @@
 	padding: 100px;
 	text-align: center;
 	width: 100%;
+	z-index:1;
+	
 }
 
-#header-text{
+#header-name{
 	
-	position:relative;
+}
+#header-text{
+	z-index:2;
+	position: relative;
 	top:100px;
 }
+
 #header-hr{
+	z-index:2;
 	width: 200px;
+	height: 2px;
+	background: #2B2B2B
 }
 /* Style of menu bar */
 .menu {
 	position:fixed;
 	overflow: hidden; //
-
+	z-index: 500;
 	background-color: #F8FFD4;
 	background-color: #b6ff5d;
-		background-color: #ddd;
+	background-color: #ddd;
 	width:100%;
 	opacity: 1;
 }
@@ -119,6 +131,15 @@ p{
 	color: #F5F5F5;
 }
 
+.contact-input{
+	background-color:#F5F5F5;
+	color:#2B2B2B;
+	width: 80%;
+	border-radius: 0.5rem;
+}
+#contact-form{
+	margin: 5%
+}
 /* Style of main */
 .main1 {
 	text-align: justify;
