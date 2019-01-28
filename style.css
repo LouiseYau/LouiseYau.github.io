@@ -31,27 +31,31 @@ html {
 }
 
 #header-name{
-	
+	font-size: 50px;
+	color: #F5F5F5;
+}
+
+#header-job{
+
+	color: #F5F5F5;
 }
 #header-text{
-	z-index:2;
+	z-index:1;
 	position: relative;
 	top:100px;
 }
 
 #header-hr{
-	z-index:2;
+	z-index:1;
 	width: 200px;
 	height: 2px;
-	background: #2B2B2B
+	background: #F5F5F5
+	
 }
 /* Style of menu bar */
 .menu {
 	position:fixed;
-	overflow: hidden; //
-	z-index: 500;
-	background-color: #F8FFD4;
-	background-color: #b6ff5d;
+	z-index: 99999;
 	background-color: #ddd;
 	width:100%;
 	opacity: 1;
@@ -101,6 +105,9 @@ p{
 }
 
 #about-me h2{
+	text-transform: uppercase;
+    font-size: 30px;
+	text-align: center;
 	margin-bottom: 30px;
 	color: #F5F5F5;
 }
@@ -109,14 +116,87 @@ p{
 	margin:0px;
 }
 
-#cv{
+/* P O R T F O L I O */
+
+
+#portfolio{
+	padding: 80px 0;
+	background: #EBEEEE;
+	z-index: 1;
+}
+
+
+#portfolio h2{
+    padding: 0;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #666;
+}
+
+#portfolio img{
+	max-width: 100%;
+}
+
+#portfolio .row > div{
+	margin-bottom: 1.5rem;
+    position: relative;
+}
+
+
+
+#portfolio .row div .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: calc(100% - 30px);
+    transform: scale(0);
+    margin: auto;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    background: rgba(0, 0, 0, .55);
+    border-radius: 20%;
+}
+
+#portfolio .row div:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+    height: 100%;
+    border-radius: 0;
+}
+
+#portfolio .row div .overlay h3{
+    color: #f7f7f7;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -200%);
+            transform: translate(-50%, -200%);
+    -ms-transform: translate(-50%, -200%);
+    letter-spacing: .05em;
+}
+
+.overlay h3.project-title{
+    -webkit-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+	-ms-transform: translate(-50%, -50%) !important;
+	text-align: center;
+}
+#portfolio{
 	
 	background-color:#2B2B2B;
 	color: #999;
 	margin:0px;
 	padding:10px;
 }
-#cv h2{
+#portfolio h2{
 	margin-bottom: 30px;
 	color: #F5F5F5;
 }
