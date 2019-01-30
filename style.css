@@ -96,12 +96,23 @@ p{
 	margin:0px;
 	padding:0px;
 }
-
-
-#about-me{
+/* ABOUT ME */
+#pic-me{
+	background-color: darkturquoise;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	margin-left:auto; margin-right:0;
+	text-align: center;
+	 
 	
+	/* margin-left: 100px !important;  */
+}
+#about-me{
+	padding-top: 80px;
+	padding-bottom: 80px;
 	background-color:#2B2B2B;
-	padding:10px;
+	/* padding:10px; */
 }
 
 #about-me h2{
@@ -114,6 +125,7 @@ p{
 #about-me p{
 	color: #999;
 	margin:0px;
+	text-align: left
 }
 
 /* P O R T F O L I O */
@@ -209,6 +221,11 @@ p{
 #contact h2{
 	margin-bottom: 30px;
 	color: #F5F5F5;
+	text-transform: uppercase;
+	text-align: center;
+}
+#contact h3{
+	margin-left: 20%
 }
 
 .contact-input{
