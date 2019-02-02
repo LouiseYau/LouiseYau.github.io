@@ -23,9 +23,7 @@
 
 <div id = "catDiv">
 <h1>Cat API</h1>
-<div id="id"></div>
-<div id="url"></div>
-<div id="image"></div>
+<div id="cat-image"></div>
 <button id="getCat">
     Get cat
   </button>
@@ -41,10 +39,10 @@
       catreq.onload=function(){
         data=JSON.parse(catreq.responseText);
         
-  document.getElementById("id").innerHTML = data[0]["id"];
-  document.getElementById("url").innerHTML = data[0]["url"];
+  {% comment %} document.getElementById("id").innerHTML = data[0]["id"];
+  document.getElementById("url").innerHTML = data[0]["url"]; {% endcomment %}
   var html = '<img src="' + data[0]["url"] + '">';
-  document.getElementById("image").innerHTML = html;
+  document.getElementById("cat-image").innerHTML = html;
       };
 };
 });
