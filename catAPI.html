@@ -30,6 +30,8 @@
     Get cat
   </button>
   </div>
+
+
 <script>
   document.addEventListener('DOMContentLoaded',function(){
       document.getElementById('getCat').onclick=function(){
@@ -47,7 +49,18 @@
 };
 });
 </script>
-<h1>Random Fake user data API</h1>
+
+<div id="listDiv">
+<h1>Fake User Data API</h1> 
+<p class="message box">
+  The list will go here
+</p>
+<p>
+  <button id="getMessage">
+    Get list
+  </button>
+</p> 
+</div>
 <script>
   document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('getMessage').onclick=function(){
@@ -108,15 +121,7 @@
     border: 1px solid #0F5897;
   }
 </style>
-<h1>Cat Photo Finder</h1> 
-<p class="message box">
-  The list will go here
-</p>
-<p>
-  <button id="getMessage">
-    Get list
-  </button>
-</p>
+
    
   </div>
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
