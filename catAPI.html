@@ -24,7 +24,7 @@
   document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('getMessage').onclick=function(){
       req=new XMLHttpRequest();
-      req.open("GET",'/json/cats.json',true);
+      req.open("GET",'https://www.freecodecamp.org/json/cats.json',true);
       req.send();
       req.onload=function(){
         json=JSON.parse(req.responseText);
